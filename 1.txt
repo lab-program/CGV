@@ -37,7 +37,7 @@ void draw_line(int x1, int y11, int x2, int y2) {
 
     x = x1; y = y11;
 
-    if (dx > dy) { // slope less than or equal to 1
+    if (dx > dy) {
         draw_pixel(x, y);
         e = 2 * dy - dx;
         inc1 = 2 * (dy - dx);
@@ -52,7 +52,7 @@ void draw_line(int x1, int y11, int x2, int y2) {
             x += incx;
             draw_pixel(x, y);
         }
-    } else { // slope greater than 1
+    } else {
         draw_pixel(x, y);
         e = 2 * dx - dy;
         inc1 = 2 * (dx - dy);
