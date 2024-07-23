@@ -58,8 +58,9 @@ void spinCube()
 
 void mouse(int btn, int state, int x, int y)
 {
-  if(btn==GLUT_LEFT_BUTTON && state ==    	GLUT_DOWN) axis = 0;      if(btn==GLUT_MIDDLE_BUTTON && state == 	GLUT_DOWN) axis = 1;
- if(btn==GLUT_RIGHT_BUTTON && state == 	GLUT_DOWN) axis = 2;
+	if(btn==GLUT_LEFT_BUTTON && state == GLUT_DOWN) axis = 0;
+	if(btn==GLUT_MIDDLE_BUTTON && state == GLUT_DOWN) axis = 1;
+	if(btn==GLUT_RIGHT_BUTTON && state == GLUT_DOWN) axis = 2;
 }
 
 void myReshape(int w, int h)
